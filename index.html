@@ -2,95 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Deployment Success | AWS CodePipeline</title>
+  <title>Deployment Success</title>
   <style>
-    /* Reset and base styling */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
+      margin: 0;
       height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(135deg, #0b132b, #1c2541, #3a506b, #5bc0be);
-      background-size: 400% 400%;
-      animation: gradientShift 12s ease infinite;
-      font-family: "Poppins", sans-serif;
-      color: #fff;
+      font-family: "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(135deg, #e0f7ec, #c3e7d1);
+      color: #2c3e50;
     }
 
-    @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    .card {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 20px;
-      padding: 60px 40px;
+    .container {
+      background: #ffffff;
+      padding: 50px 60px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
       text-align: center;
-      backdrop-filter: blur(12px);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
       max-width: 700px;
     }
 
     h1 {
-      font-size: 3rem;
-      font-weight: 700;
-      letter-spacing: 1px;
-      background: linear-gradient(to right, #5bc0be, #f4d35e, #ee964b);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: glow 2s ease-in-out infinite alternate;
-    }
-
-    @keyframes glow {
-      from { text-shadow: 0 0 10px rgba(91,192,190,0.7); }
-      to { text-shadow: 0 0 25px rgba(244,211,94,0.9); }
+      color: #007f3f;
+      font-size: 2.8rem;
+      margin-bottom: 15px;
     }
 
     h2 {
-      font-size: 1.25rem;
       font-weight: 400;
+      font-size: 1.1rem;
+      color: #555;
       line-height: 1.6;
-      margin: 20px 0;
-      color: #eaf6f6;
+      margin-bottom: 25px;
     }
 
     p {
       font-size: 0.95rem;
-      margin-top: 20px;
-      color: #d9d9d9;
+      color: #666;
     }
 
     a {
-      color: #f4d35e;
+      color: #007f3f;
       text-decoration: none;
       font-weight: 600;
-      transition: all 0.3s ease;
+      transition: color 0.3s ease;
     }
 
     a:hover {
-      color: #ee964b;
-      text-shadow: 0 0 8px rgba(238, 150, 75, 0.8);
+      color: #004d25;
+    }
+
+    .emoji {
+      font-size: 2.2rem;
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>🚀 Deployment Successful!</h1>
+  <div class="container">
+    <div class="emoji">✅</div>
+    <h1>Deployment Successful!</h1>
     <h2>
-      Your pipeline has seamlessly retrieved the source application from an 
+      Your pipeline successfully retrieved the source application from an 
       <strong>Amazon S3</strong> bucket and deployed it to 
-      <strong>three EC2 instances</strong> using <strong>AWS CodeDeploy by Yashvie Mahey</strong>.
+      <strong>three EC2 instances</strong> using 
+      <strong>AWS CodeDeploy</strong>.
     </h2>
     <p>
-      Curious about next steps? Explore more in the 
+      For next steps, visit the 
       <a href="https://docs.aws.amazon.com/codepipeline" target="_blank">AWS CodePipeline Documentation</a>.
       <br><br>
       <em>— Incedge 2020</em>
